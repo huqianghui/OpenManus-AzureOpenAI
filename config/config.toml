@@ -1,8 +1,0 @@
-# Global LLM configuration
-[llm]
-model = "o1"
-api_version = "2025-01-01-preview"
-base_url = "https://XXXXX.openai.azure.com/"
-api_key = "XXXXXXX"
-max_tokens = 4096
-temperature = 0.0
