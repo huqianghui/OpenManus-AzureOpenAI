@@ -41,6 +41,13 @@ cd OpenManus
 pip install -r requirements.txt
 ```
 
+4. Install Web Browser for playwright
+
+```bash
+playwright install
+```
+
+
 ## Configuration
 
 OpenManus requires configuration for the LLM APIs it uses. Follow these steps to set up your configuration:
@@ -56,9 +63,10 @@ cp config/config.example.toml config/config.toml
 ```toml
 # Global LLM configuration
 [llm]
-model = "gpt-4o"
-base_url = "https://api.openai.com/v1"
-api_key = "sk-..."  # Replace with your actual API key
+model = "o1"
+api_version = "2025-01-01-preview"
+base_url = "https://XXXX.openai.azure.com/"
+api_key = "XXXXX"
 max_tokens = 4096
 temperature = 0.0
 

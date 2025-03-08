@@ -42,6 +42,12 @@ cd OpenManus
 pip install -r requirements.txt
 ```
 
+4. 给playwright安装浏览器环境
+
+```bash
+playwright install
+```
+
 ## 配置说明
 
 OpenManus 需要配置使用的 LLM API，请按以下步骤设置：
@@ -57,9 +63,10 @@ cp config/config.example.toml config/config.toml
 ```toml
 # 全局 LLM 配置
 [llm]
-model = "gpt-4o"
-base_url = "https://api.openai.com/v1"
-api_key = "sk-..."  # 替换为真实 API 密钥
+model = "o1"
+api_version = "2025-01-01-preview"
+base_url = "https://XXXX.openai.azure.com/"
+api_key = "XXXXX"
 max_tokens = 4096
 temperature = 0.0
 
